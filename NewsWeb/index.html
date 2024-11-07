@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GAMEPEDIA NEWS</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body >
+    <nav >
+      <div class="main-nav container flex" >
+        <a href="C:\Users\Kavya\OneDrive\Desktop\Web developmenet projects new\Game-a-thon\GAMEIPEDIA\index.html" onclick="reload()" class="company-logo">
+          <h1 style="color:white;">GAMEIPEDIA</h1>
+        </a>
+        <div class="nav-links">
+          <ul class="flex">
+            <li
+              class="hover-link nav-item"
+              id="Gaming news"
+              onclick="onNavItemClick('Gaming news')"
+            >
+              GAME UPDATES
+            </li>
+            <li
+              class="hover-link nav-item"
+              id="latest games"
+              onclick="onNavItemClick('latest games')"
+            >
+              LATEST GAMES
+            </li>
+            <li
+              class="hover-link nav-item"
+              id="2024 best games"
+              onclick="onNavItemClick('2024 best games')"
+            >
+              BEST GAMES
+            </li>
+          </ul>
+        </div>
+        <div class="search-bar flex">
+          <input
+            id="search-text"
+            type="text"
+            class="news-input"
+            placeholder="e.g. Science"
+          />
+          <button id="search-button" class="search-button">Search</button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="cards-container container flex" id="cards-container"></div>
+    </main>
+
+    <template id="template-news-card">
+      <div class="card">
+        <div class="card-header">
+          <img
+            src="https://via.placeholder.com/400x200"
+            alt="news-image"
+            id="news-img"
+          />
+        </div>
+        <div class="card-content">
+          <h3 id="news-title">This is the Title</h3>
+          <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+          <p class="news-desc" id="news-desc">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            saepe quis voluptatum quisquam vitae doloremque facilis molestias
+            quae ratione cumque!
+          </p>
+        </div>
+      </div>
+    </template>
+    <script src="script.js"></script>
+
+  </body>
+</html>
